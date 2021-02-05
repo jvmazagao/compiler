@@ -1,0 +1,5 @@
+if(a>b and a>c ) maior := a;
+else if (b>c)
+   maior := b;
+else
+   maior := c;

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lexer.LexerTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2021-02-05T22:01:50" hostname="Joaos-MacBook-Pro.local" time="0.026">
+  <properties/>
+  <testcase name="shouldProcessExpressions()" classname="lexer.LexerTest" time="0.008"/>
+  <testcase name="scanVariablesAndReturnTokens()" classname="lexer.LexerTest" time="0.002"/>
+  <testcase name="shouldProcessVariablesAttributions()" classname="lexer.LexerTest" time="0.001"/>
+  <testcase name="shouldNotProcessComments()" classname="lexer.LexerTest" time="0.001"/>
+  <testcase name="scanAllCharsAndReturnAllReservedTokens()" classname="lexer.LexerTest" time="0.001"/>
+  <testcase name="reservedWords()" classname="lexer.LexerTest" time="0.001"/>
+  <testcase name="shouldProcessConditionals()" classname="lexer.LexerTest" time="0.002"/>
+  <testcase name="shouldProcessVariablesAttributions2()" classname="lexer.LexerTest" time="0.002"/>
+  <testcase name="shouldProcessConditionals2()" classname="lexer.LexerTest" time="0.001"/>
+  <testcase name="shouldProcessFunctions()" classname="lexer.LexerTest" time="0.002"/>
+  <testcase name="scanStringAndReturnTokenIdAndInsertInTable()" classname="lexer.LexerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

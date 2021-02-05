@@ -1,0 +1,4 @@
+symbolTable/SymbolTableTest.java
+ symbolTable.SymbolTableTest
+lexer/LexerTest.java
+ lexer.LexerTest

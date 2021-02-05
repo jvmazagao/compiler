@@ -1,0 +1,4 @@
+init
+    a, b, $c, is integer;
+    result is real;
+stop

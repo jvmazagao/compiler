@@ -1,0 +1,15 @@
+init
+stop
+is
+%
+integer
+real
+if
+else
+begin
+do
+while
+end
+read
+write
+string
