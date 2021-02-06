@@ -1,0 +1,9 @@
+init
+   a, b, c, maior is integer;
+      write("Digite uma idade: ");
+      read(a);
+      write("Digite outra idade: ");
+      read(b);
+      write("Digite mais uma idade: ");
+      read(c;
+end

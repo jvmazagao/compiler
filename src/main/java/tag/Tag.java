@@ -4,7 +4,6 @@ public enum Tag {
   INIT,
   STOP,
   IS,
-  COMMENT,
   INTEGER,
   STRING,
   REAL,
@@ -16,7 +15,6 @@ public enum Tag {
   END,
   READ,
   WRITE,
-  ATTR,
 
 
   EQS,
@@ -32,11 +30,4 @@ public enum Tag {
   EQ,
 
   ID,
-  NUM,
-  SUM,
-  MULT,
-  MINUS,
-  QUOT,
-
-
 }

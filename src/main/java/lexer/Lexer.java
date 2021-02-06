@@ -12,8 +12,8 @@ import java.io.IOException;
 public class Lexer {
   private char ch;
   private boolean end;
-  private BufferedReader archive;
-  private SymbolTable table;
+  private final BufferedReader archive;
+  private final SymbolTable table;
   private Integer line;
 
   public Lexer(String archive, SymbolTable table) throws FileNotFoundException {
@@ -50,9 +50,19 @@ public class Lexer {
       }
       else if (ch == '\n') line++;
       else if (ch == '%') {
+        StringBuilder sb = new StringBuilder();
         do {
+          sb.append(this.ch);
           readChar();
-        } while (this.ch != '%' && this.ch != '\n' && this.ch != '\uFFFF');
+          if(this.ch == '\n') {
+            line++;
+          }
+        } while (this.ch != '%' && this.ch != '\uFFFF');
+        sb.append(this.ch);
+        readChar();
+        if(!sb.toString().endsWith("%")) {
+          throw new Error("Syntax Error: Comments not closed");
+        }
       }
       else break;
     }
@@ -84,10 +94,18 @@ public class Lexer {
       return new Token(Tag.LT, "<");
     }
 
+    if(this.ch == '=') {
+      readChar();
+      if (this.ch == '=') {
+        readChar();
+        return new Token(Tag.EQS, "==");
+      }
+      return new Token(Tag.ID, "=");
+    }
+
     if (Character.isDigit(ch)){
       String result;
       int value= 0;
-      int q = 0;
       do{
         value = 10*value + Character.digit(ch,10);
         readChar();
@@ -114,6 +132,10 @@ public class Lexer {
       do{
         sb.append(ch);
         readChar();
+        if(this.ch == '_') {
+          sb.append(ch);
+          readChar();
+        }
       } while(Character.isLetterOrDigit(ch));
       String lex = sb.toString();
       if (isLexemeExists(lex)) {

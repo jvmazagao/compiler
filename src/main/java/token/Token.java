@@ -6,9 +6,9 @@ import java.util.Objects;
 
 public class Token {
 
-  private Tag tag;
-  private String lex;
-  private long line;
+  private final Tag tag;
+  private final String lex;
+  private final long line;
 
   public Token(Tag tag, String lex) {
     this.tag = tag;
@@ -20,25 +20,14 @@ public class Token {
     return tag;
   }
 
-  public void setTag(Tag tag) {
-    this.tag = tag;
-  }
-
   public String getLex() {
     return lex;
-  }
-
-  public void setLex(String lex) {
-    this.lex = lex;
   }
 
   public long getLine() {
     return line;
   }
 
-  public void setLine(long line) {
-    this.line = line;
-  }
 
   @Override
   public boolean equals(Object o) {

@@ -7,7 +7,5 @@ symbolTable/SymbolTable.java
  symbolTable.SymbolTable$1
 lexer/Lexer.java
  lexer.Lexer
-exceptions/FileNotFound.java
- exceptions.FileNotFound
 Compiler.java
  Compiler

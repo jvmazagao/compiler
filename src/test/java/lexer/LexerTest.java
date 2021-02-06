@@ -271,6 +271,24 @@ public class LexerTest {
     assertEquals(list.get(34), new Token(Tag.ID, "EOF"));
   }
 
+  @Test
+  public void shouldProcessUnderscoreRule() throws IOException {
+    SymbolTable table = new SymbolTable();
+    Lexer lexer = new Lexer(formatFile("underscoreVariable"), table);
+    List<Token> list = new ArrayList<>(Collections.emptyList());
+    while (lexer.isEnd()) {
+      list.add(lexer.scan());
+    }
+
+    assertEquals(list.get(0), new Token(Tag.ID, "_"));
+    assertEquals(list.get(1), new Token(Tag.ID, "a"));
+    assertEquals(list.get(2), new Token(Tag.ID, ","));
+    assertEquals(list.get(3), new Token(Tag.ID, "value_1"));
+    assertEquals(list.get(4), new Token(Tag.IS, "is"));
+    assertEquals(list.get(5), new Token(Tag.INTEGER, "integer"));
+    assertEquals(list.get(6), new Token(Tag.ID, ";"));
+  }
+
   private String formatFile(String file) {
     Path path = Paths.get("src/test/java/" + file);
     return path.toString();

@@ -1,9 +1,7 @@
-import exceptions.FileNotFound;
 import lexer.Lexer;
 import symbolTable.SymbolTable;
 import token.Token;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
