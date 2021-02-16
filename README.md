@@ -45,7 +45,7 @@ uma referencia na memória virtual nunca teremos identificadores iguais)
 ### Teste 1
 
 Tabela de simbolos:
-
+```
 Key: and, Token: AND lex: and
 Key: a, Token: ID lex: a
 Key: b, Token: ID lex: b
@@ -66,10 +66,10 @@ Key: or, Token: OR lex: or
 Key: is, Token: IS lex: is
 Key: end, Token: END lex: end
 Key: string, Token: STRING lex: string
-
+```
 
 Lista de tokens:
-
+```
 Token: INIT lex: init
 Token: ID lex: a
 Token: ID lex: ,
@@ -132,11 +132,11 @@ Token: ID lex: )
 Token: ID lex: ;
 Token: STOP lex: stop
 Token: ID lex: EOF
-
+```
 ### Teste 2
 
 Tabela de Simbolos
-
+```
 Key: and, Token: AND lex: and
 Key: a, Token: ID lex: a
 Key: b, Token: ID lex: b
@@ -160,8 +160,9 @@ Key: is, Token: IS lex: is
 Key: end, Token: END lex: end
 Key: Write, Token: ID lex: Write
 Key: string, Token: STRING lex: string
-
+```
 Lista de Tokens
+```
 Token: ID lex: a
 Token: ID lex: ,
 Token: ID lex: _
@@ -226,10 +227,11 @@ Token: ID lex: )
 Token: ID lex: ;
 Token: STOP lex: stop
 Token: ID lex: EOF
-
+```
 ### Teste 3
 
 Tabela de Simbolos
+```
 Key: Calculo, Token: ID lex: Calculo
 Key: and, Token: AND lex: and
 Key: de, Token: ID lex: de
@@ -256,9 +258,10 @@ Key: INIT, Token: ID lex: INIT
 Key: int, Token: ID lex: int
 Key: STOP, Token: ID lex: STOP
 Key: string, Token: STRING lex: string
-
+```
 Lista de Tokens
 
+```
 Token: ID lex: Calculo
 Token: ID lex: de
 Token: ID lex: idade
@@ -308,11 +311,13 @@ Token: ID lex: )
 Token: ID lex: ;
 Token: ID lex: STOP
 Token: ID lex: EOF
+```
 
 ### Teste 4
 
 Tabela de Simbolos
 
+```
 Key: total, Token: ID lex: total
 Key: and, Token: AND lex: and
 Key: a, Token: ID lex: a
@@ -336,10 +341,10 @@ Key: or, Token: OR lex: or
 Key: is, Token: IS lex: is
 Key: end, Token: END lex: end
 Key: string, Token: STRING lex: string
-
-
+```
 Lista de Tokens
 
+```
 Token: INIT lex: init
 Token: ID lex: i
 Token: ID lex: ,
@@ -435,11 +440,13 @@ Token: ID lex: k
 Token: ID lex: )
 Token: ID lex: ;
 Token: ID lex: EOF
+```
 
 ### Teste 5
 
 Tabela de Simbolos
 
+```
 Key: total, Token: ID lex: total
 Key: and, Token: AND lex: and
 Key: a, Token: ID lex: a
@@ -466,9 +473,11 @@ Key: altura, Token: ID lex: altura
 Key: end, Token: END lex: end
 Key: cont, Token: ID lex: cont
 Key: string, Token: STRING lex: string
+```
 
 Lista de tokens
 
+```
 Token: INIT lex: init
 Token: WRITE lex: write
 Token: ID lex: (
@@ -586,11 +595,11 @@ Token: ID lex: k
 Token: ID lex: )
 Token: ID lex: ;
 Token: ID lex: EOF
-
+```
 ### Teste 6
 
 Tabela de Simbolos
-
+```
 Key: and, Token: AND lex: and
 Key: a, Token: ID lex: a
 Key: b, Token: ID lex: b
@@ -612,8 +621,9 @@ Key: is, Token: IS lex: is
 Key: end, Token: END lex: end
 Key: maior, Token: ID lex: maior
 Key: string, Token: STRING lex: string
-
+```
 Lista de Tokens
+```
 Token: INIT lex: init
 Token: ID lex: a
 Token: ID lex: ,
@@ -698,9 +708,9 @@ Token: ID lex: )
 Token: ID lex: ;
 Token: END lex: end
 Token: ID lex: EOF
-
+```
 ### Teste 7
-
+```
 Tabela de Simbolos
 Key: and, Token: AND lex: and
 Key: a, Token: ID lex: a
@@ -722,9 +732,9 @@ Key: is, Token: IS lex: is
 Key: end, Token: END lex: end
 Key: maior, Token: ID lex: maior
 Key: string, Token: STRING lex: string
-
+```
 Lista de tokens
-
+```
 Token: INIT lex: init
 Token: ID lex: a
 Token: ID lex: ,
@@ -767,4 +777,4 @@ Token: ID lex: c
 Token: ID lex: ;
 Token: END lex: end
 Token: ID lex: EOF
-
+```
